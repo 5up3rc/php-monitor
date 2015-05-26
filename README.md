@@ -4,11 +4,17 @@ tags: php内部函数监控扩展
 ---
 
 ＃ 安装
+
     phpize
+    
     ./configure
+    
    make & make install
+   
    需要redis支持，当前只支持php5.5及以上版本
+   
 ＃ 配置
+
 php.ini
 
 extension=monitor.so
