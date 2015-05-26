@@ -3,6 +3,8 @@ title: php-monitor
 tags: php内部函数监控扩展
 ---
 
+需要redis支持，当前只支持php5.5及以上版本,其他版本需修改部分代码。
+
 ＃ 安装
 
 ```
@@ -10,7 +12,6 @@ phpize
 ./configure
 make & make install
 ```
-需要redis支持，当前只支持php5.5及以上版本
    
 ＃ 配置
 
