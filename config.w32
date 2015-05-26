@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("monitor", "for monitor support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("monitor", "enable monitor support", "no");
+
+if (PHP_MONITOR != "no") {
+	EXTENSION("monitor", "monitor.c");
+}
+
