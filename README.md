@@ -10,8 +10,7 @@ phpize
 ./configure
 make & make install
 ```
-
-   需要redis支持，当前只支持php5.5及以上版本
+需要redis支持，当前只支持php5.5及以上版本
    
 ＃ 配置
 
@@ -28,7 +27,7 @@ monitor.cache_list_key = "_monitor_php_function_info" #redis list队列，监测
 ```
 
 ＃ 例子
-
+```
 reids-cli
 
 #设置监控函数
@@ -38,3 +37,4 @@ sadd _monitor_php_function mysql_query|table
 #读取监控纪录
 
 rpop _monitor_php_function_info
+```
